@@ -20,10 +20,12 @@ on the Docker Hub.
 
     # on a remote host that can reach ipmi
     ssh admin
-    $ docker run -p 8080:8080 solarkennedy/ipmi-kvm-docker
+    $ docker run -p 5900:5900 -p 8080:8080 gari123/ipmi-kvm-docker
     
     # Now on your laptop
     xdg-open http://admin:8080
+    
+    # Or you can use yours vnc client 
 
 In your web browser you should see the firefox, ready to connect to 
 and IPMI KVM:
