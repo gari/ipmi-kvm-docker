@@ -16,7 +16,12 @@ This container runs:
 This is a [trusted build](https://registry.hub.docker.com/u/solarkennedy/ipmi-kvm-docker/)
 on the Docker Hub.
 
-## Run It
+## Run It localy
+    
+    # docker run -p 127.0.0.1:5900:5900 -p 127.0.0.1:8080:8080 gari123/ipmi-kvm-docker
+    # xdg-open http://127.0.0.1:8080
+
+## Run It Remotly
 
     # on a remote host that can reach ipmi
     ssh admin
