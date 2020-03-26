@@ -1,4 +1,4 @@
-FROM solarkennedy/ipmi-kvm-docker
+FROM gari123/ipmi-kvm-docker:java7
 
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 COPY .java/* /root/.java/deployment/
